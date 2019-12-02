@@ -1,7 +1,11 @@
 <div class="container">
    <div class="row">
       <div class="col-xs-12">
-          <p>This is Servers works! {{serversId}} and server status {{serversStatus}}</p>
+          <p>This is Servers works! {{serversId}} and server status {{getServerStatus()}}</p>
+          <label>Server Name</label>
+          <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+          <button class="btn btn-primary" [disabled]="!serversStatus" (click)="onCreateServer()"> Add Here</button>
+          <p>{{serversStatusUpdate}} && {{serverName}}</p>
       <div>
    <div>
 </div>
