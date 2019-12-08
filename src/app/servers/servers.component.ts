@@ -16,8 +16,7 @@ export class ServersComponent implements OnInit {
   constructor() {
     setTimeout(()=>{
       this.serversStatus=true;
-    },2000)
-
+    },2000);
   }
 
   getServerStatus(){
