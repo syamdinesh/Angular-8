@@ -1,3 +1,4 @@
 <p>two-way-bidning works!</p>
 Enter Username:- <input type="text" class="form-control" [(ngModel)]="userName">
-<button class="btn btn-primary" [disabled]="isUserNameEmpty" (click)="actionButton()">Here</button>
+<p>{{userName}}</p>
+<button class="btn btn-primary" [disabled]="userName===''" (click)="userName=''">Here</button>

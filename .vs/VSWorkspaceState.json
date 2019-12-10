@@ -4,7 +4,9 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\server",
-    "\\src\\app\\servers"
+    "\\src\\app\\servers",
+    "\\src\\app\\two-way-binding"
   ],
+  "SelectedNode": "\\src\\app\\servers\\servers.component.css",
   "PreviewInSolutionExplorer": false
 }
