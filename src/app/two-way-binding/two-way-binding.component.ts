@@ -12,7 +12,7 @@ export class TwoWayBindingComponent implements OnInit {
   numberOfClicks=0;
 
   constructor() {
-    this.isActive();4
+    this.isActive();
   }
 
   ngOnInit() {
