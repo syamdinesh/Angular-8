@@ -9,9 +9,10 @@ export class TwoWayBindingComponent implements OnInit {
 
   userName='';
   isUserNameEmpty=false;
+  numberOfClicks=0;
 
   constructor() {
-    this.isActive();
+    this.isActive();4
   }
 
   ngOnInit() {
@@ -28,5 +29,13 @@ export class TwoWayBindingComponent implements OnInit {
   }
   actionButton(){
     this.userName='';
+  }
+
+  counting(){
+    this.numberOfClicks++;
+  }
+
+  getColor(){
+    return this.numberOfClicks>= 5 ? 'lightgreen': '';
   }
 }

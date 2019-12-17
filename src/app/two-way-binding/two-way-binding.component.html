@@ -2,3 +2,9 @@
 Enter Username:- <input type="text" class="form-control" [(ngModel)]="userName">
 <p>{{userName}}</p>
 <button class="btn btn-primary" [disabled]="userName===''" (click)="userName=''">Here</button>
+
+<br><br>
+<h2 class="text-align:center">Excercise-3</h2>
+<br><br>
+<button (click)=counting() class="btn btn-primary"> Display Details</button>
+<p [ngStyle]="{backgroundColor: getColor()}">{{numberOfClicks}}</p>
