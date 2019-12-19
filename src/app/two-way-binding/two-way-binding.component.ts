@@ -1,18 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { preserveWhitespacesDefault } from '@angular/compiler';
 
 @Component({
   selector: 'app-two-way-binding',
   templateUrl: './two-way-binding.component.html',
-  styleUrls: ['./two-way-binding.component.css']
+  styles: ['']
 })
 export class TwoWayBindingComponent implements OnInit {
 
   userName='';
   isUserNameEmpty=false;
   numberOfClicks=0;
+  serverStatus: string='offline';
+  servers =['Test server', 'Test server1'];
 
   constructor() {
     this.isActive();
+    this.serverStatus=Math.random()> 0.5 ? 'online': 'offline';
   }
 
   ngOnInit() {
@@ -32,6 +36,7 @@ export class TwoWayBindingComponent implements OnInit {
   }
 
   counting(){
+    this.servers.push(this.serverStatus);
     this.numberOfClicks++;
   }
 

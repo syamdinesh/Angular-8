@@ -7,4 +7,5 @@ Enter Username:- <input type="text" class="form-control" [(ngModel)]="userName">
 <h2 class="text-align:center">Excercise-3</h2>
 <br><br>
 <button (click)=counting() class="btn btn-primary"> Display Details</button>
-<p [ngStyle]="{backgroundColor: getColor()}">{{numberOfClicks}}</p>
+<p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus==='online'}">{{numberOfClicks}}</p>
+<app-two-way-binding *ngFor="let the server"+servers></app-two-way-binding>
